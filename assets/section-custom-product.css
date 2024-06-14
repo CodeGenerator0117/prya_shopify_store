@@ -30,18 +30,6 @@ a:empty, ul:empty, dl:empty, div:empty, section:empty, article:empty, p:empty, h
     width: 25%;
 }
 
-ul.builder_tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-    max-width: 220px;
-}
-
-.builder_swatches ul {
-    list-style: none;
-    padding: 0 30px 0 0;
-}
-
 ul.builder_tabs li.current {
     opacity: 1;
 }
@@ -162,4 +150,11 @@ li.alphabetical_icon span {
 
 .errormessage_builder {
     color: #f60909;
+}
+
+ul.builder_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    max-width: 220px;
 }
