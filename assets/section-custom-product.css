@@ -210,4 +210,15 @@ ul.builder_tabs li {
     ul.builder_tabs li.tab-link {
         flex-direction: column;
     }
+
+    p.current_builder_active_tabs {
+        display: none;
+    }
+
+    .builder_swatches ul {
+        overflow: hidden;
+        flex-wrap: nowrap;
+        gap: 4px 10px;
+        overflow-x: auto;
+    }
 }
