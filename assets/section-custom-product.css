@@ -285,7 +285,253 @@ button.remove_selected_from_builder {
     overflow: auto;
 }
 
+.builderChainPoint[data-point="1"][data-style="odd"] {
+    left: 1%;
+    top: 47%;
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+    transform-origin: top right;
+}
 
+.builderChainPoint[data-point="2"][data-style="odd"] {
+    left: 6%;
+    top: 63.5%;
+    -webkit-transform: rotate(71.5deg);
+    -moz-transform: rotate(71.5deg);
+    -ms-transform: rotate(71.5deg);
+    -o-transform: rotate(71.5deg);
+    transform: rotate(71.5deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="3"][data-style="odd"] {
+    left: 13%;
+    top: 73.5%;
+    -webkit-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    transform: rotate(65deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="4"][data-style="odd"] {
+    left: 23%;
+    top: 80.5%;
+    -webkit-transform: rotate(49deg);
+    -moz-transform: rotate(49deg);
+    -ms-transform: rotate(49deg);
+    -o-transform: rotate(49deg);
+    transform: rotate(49deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="5"][data-style="odd"] {
+    left: 34%;
+    top: 85%;
+    -webkit-transform: rotate(37deg);
+    -moz-transform: rotate(37deg);
+    -ms-transform: rotate(37deg);
+    -o-transform: rotate(37deg);
+    transform: rotate(37deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="6"][data-style="odd"] {
+    left: 46.3%;
+    top: 78%;
+}
+
+.builderChainPoint[data-point="7"][data-style="odd"] {
+    left: 57%;
+    top: 78%;
+    -webkit-transform: rotate(-37deg);
+    -moz-transform: rotate(-37deg);
+    -ms-transform: rotate(-37deg);
+    -o-transform: rotate(-37deg);
+    transform: rotate(-37deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="8"][data-style="odd"] {
+    left: 67%;
+    top: 72.5%;
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="9"][data-style="odd"] {
+    left: 74%;
+    top: 64.5%;
+    -webkit-transform: rotate(-64deg);
+    -moz-transform: rotate(-64deg);
+    -ms-transform: rotate(-64deg);
+    -o-transform: rotate(-64deg);
+    transform: rotate(-64deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="10"][data-style="odd"] {
+    left: 83.5%;
+    top: 40.5%;
+    -webkit-transform: rotate(-72deg);
+    -moz-transform: rotate(-72deg);
+    -ms-transform: rotate(-72deg);
+    -o-transform: rotate(-72deg);
+    transform: rotate(-72deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="11"][data-style="odd"] {
+    left: 87.5%;
+    top: 23%;
+    -webkit-transform: rotate(-76deg);
+    -moz-transform: rotate(-76deg);
+    -ms-transform: rotate(-76deg);
+    -o-transform: rotate(-76deg);
+    transform: rotate(-76deg);
+    transform-origin: top left;
+}
+
+
+.builderChainPoint[data-point="1"][data-style="even"] {
+    left: 0%;
+    top: 44%;
+    -webkit-transform: rotate(78deg);
+    -moz-transform: rotate(78deg);
+    -ms-transform: rotate(78deg);
+    -o-transform: rotate(78deg);
+    transform: rotate(78deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="2"][data-style="even"] {
+    left: 4.5%;
+    top: 59%;
+    -webkit-transform: rotate(73deg);
+    -moz-transform: rotate(73deg);
+    -ms-transform: rotate(73deg);
+    -o-transform: rotate(73deg);
+    transform: rotate(73deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="3"][data-style="even"] {
+    left: 10%;
+    top: 69.5%;
+    -webkit-transform: rotate(69deg);
+    -moz-transform: rotate(69deg);
+    -ms-transform: rotate(69deg);
+    -o-transform: rotate(69deg);
+    transform: rotate(69deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="4"][data-style="even"] {
+    left: 17.5%;
+    top: 79%;
+    -webkit-transform: rotate(63deg);
+    -moz-transform: rotate(63deg);
+    -ms-transform: rotate(63deg);
+    -o-transform: rotate(63deg);
+    transform: rotate(63deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="5"][data-style="even"] {
+    left: 28%;
+    top: 84.5%;
+    -webkit-transform: rotate(48deg);
+    -moz-transform: rotate(48deg);
+    -ms-transform: rotate(48deg);
+    -o-transform: rotate(48deg);
+    transform: rotate(48deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="6"][data-style="even"] {
+    left: 41%;
+    top: 82%;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    -o-transform: rotate(18deg);
+    transform: rotate(18deg);
+    transform-origin: top right;
+}
+
+.builderChainPoint[data-point="7"][data-style="even"] {
+    left: 51.5%;
+    top: 78.5%;
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="8"][data-style="even"] {
+    left: 62%;
+    top: 76%;
+    -webkit-transform: rotate(-48deg);
+    -moz-transform: rotate(-48deg);
+    -ms-transform: rotate(-48deg);
+    -o-transform: rotate(-48deg);
+    transform: rotate(-48deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="9"][data-style="even"] {
+    left: 70.5%;
+    top: 69%;
+    -webkit-transform: rotate(-62deg);
+    -moz-transform: rotate(-62deg);
+    -ms-transform: rotate(-62deg);
+    -o-transform: rotate(-62deg);
+    transform: rotate(-62deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="10"][data-style="even"] {
+    left: 77%;
+    top: 59.5%;
+    -webkit-transform: rotate(-69deg);
+    -moz-transform: rotate(-69deg);
+    -ms-transform: rotate(-69deg);
+    -o-transform: rotate(-69deg);
+    transform: rotate(-69deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="11"][data-style="even"] {
+    left: 84%;
+    top: 40%;
+    -webkit-transform: rotate(-74deg);
+    -moz-transform: rotate(-74deg);
+    -ms-transform: rotate(-74deg);
+    -o-transform: rotate(-74deg);
+    transform: rotate(-74deg);
+    transform-origin: top left;
+}
+
+.builderChainPoint[data-point="12"][data-style="even"] {
+    left: 87%;
+    top: 26%;
+    -webkit-transform: rotate(-78deg);
+    -moz-transform: rotate(-78deg);
+    -ms-transform: rotate(-78deg);
+    -o-transform: rotate(-78deg);
+    transform: rotate(-78deg);
+    transform-origin: top left;
+}
 
 
 
