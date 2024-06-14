@@ -1,11 +1,11 @@
 <section id="MainProduct-template--22385408246078__main" class="page-width section-template--22385408246078__main-padding" data-section="template--22385408246078__main">
-  <link href="https://treatsstudio.co.uk/cdn/shop/t/22/assets/section-main-product.css?v=48135068602649977061712856141" rel="stylesheet" type="text/css" media="all">
-  <link href="https://treatsstudio.co.uk/cdn/shop/t/22/assets/component-accordion.css?v=180964204318874863811712856141" rel="stylesheet" type="text/css" media="all">
-  <link href="https://treatsstudio.co.uk/cdn/shop/t/22/assets/component-price.css?v=65402837579211014041712856141" rel="stylesheet" type="text/css" media="all">
-  <link href="https://treatsstudio.co.uk/cdn/shop/t/22/assets/component-slider.css?v=59618644462075275371712856141" rel="stylesheet" type="text/css" media="all">
-  <link href="https://treatsstudio.co.uk/cdn/shop/t/22/assets/component-rating.css?v=24573085263941240431712856141" rel="stylesheet" type="text/css" media="all">
-  <link href="https://treatsstudio.co.uk/cdn/shop/t/22/assets/component-loading-overlay.css?v=167310470843593579841712856141" rel="stylesheet" type="text/css" media="all">
-  <link href="https://treatsstudio.co.uk/cdn/shop/t/22/assets/component-deferred-media.css?v=8449899997886876191712856141" rel="stylesheet" type="text/css" media="all">
+  {{ 'section-custom-product.css' | asset_url | stylesheet_tag }}
+  {{ 'component-custom-accordion.css' | asset_url | stylesheet_tag }}
+  {{ 'component-custom-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-custom-slider.css' | asset_url | stylesheet_tag }}
+  {{ 'component-custom-rating.css' | asset_url | stylesheet_tag }}
+  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+  {{ 'component-custom-deferred-media.css' | asset_url | stylesheet_tag }}
   <style data-shopify="">
     #shopify-section-template--22385408246078__main,
     .product-media-container.media-type-image {
@@ -26,15 +26,16 @@
     <div class="builder_swatches">
       <ul class="builder_tabs">
           <li class="tab-link current" data-tab="builder_tabstabcontent-1">
-            {{ "https://treatsstudio.co.uk/cdn/shop/files/switches_ballons.png?v=1709652423" | image_url }}
+            {% comment %} {{ card_product.featured_media | image_url: width: 165 }} {% endcomment %}
+            <img src="https://treatsstudio.co.uk/cdn/shop/files/switches_ballons.png?v=1709652423" loading="lazy">
             <span>PAVED BALLOONS</span>
           </li>
           <li class="tab-link" data-tab="builder_tabstabcontent-2">
-            {{ "https://treatsstudio.co.uk/cdn/shop/files/switches_HEART.png?v=1709652423" | image_url }}
+            <img src="https://treatsstudio.co.uk/cdn/shop/files/switches_HEART.png?v=1709652423" loading="lazy">
             <span>HEARTS</span>
           </li>
           <li class="tab-link" data-tab="builder_tabstabcontent-3">
-            {{ "https://treatsstudio.co.uk/cdn/shop/files/switches_letters.png?v=1709652423" | image_url }}
+            <img src="https://treatsstudio.co.uk/cdn/shop/files/switches_letters.png?v=1709652423" loading="lazy">
             <span>GOLD BALLOONS</span>
           </li>
       </ul>
