@@ -167,3 +167,47 @@ ul.builder_tabs li {
     padding-bottom: 5px;
     margin: 0 auto 5px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .builder_swatches ul {
+        overflow: hidden;
+        flex-wrap: nowrap;
+        gap: 4px 10px;
+        overflow-x: auto;
+    }
+    .builder_swatches ul.builder_tabs {
+        max-width: 100%;
+        padding: 0;
+        gap: 0;
+    }
+    .builder_swatches {
+        margin-top: 50px;
+        order: 2;
+        width: 100%;
+    }
+
+    ul.builder_tabs li.tab-link {
+        flex-direction: column;
+    }
+}
