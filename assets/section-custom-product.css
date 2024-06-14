@@ -30,33 +30,6 @@ a:empty, ul:empty, dl:empty, div:empty, section:empty, article:empty, p:empty, h
     width: 25%;
 }
 
-ul.builder_tabs li.current {
-    opacity: 1;
-}
-
-ul.builder_tabs li {
-    cursor: pointer;
-}
-
-ul.builder_tabs li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    position: relative;
-    width: 33.33%;
-    color: #252525;
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    opacity: .5;
-    padding-bottom: 5px;
-    margin: 0 auto 5px 0;
-}
-
 .builder_swatches ul li.tab-link img {
     max-width: 40px;
 }
@@ -166,4 +139,31 @@ li.alphabetical_icon:hover {
 li.alphabetical_icon:hover span {
     visibility: visible;
     transition: 1s all;
+}
+
+ul.builder_tabs li.current {
+    opacity: 1;
+}
+
+ul.builder_tabs li {
+    cursor: pointer;
+}
+
+ul.builder_tabs li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: relative;
+    width: 33.33%;
+    color: #252525;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: .5;
+    padding-bottom: 5px;
+    margin: 0 auto 5px 0;
 }
