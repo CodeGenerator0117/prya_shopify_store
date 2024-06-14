@@ -158,3 +158,12 @@ ul.builder_tabs {
     gap: 0;
     max-width: 220px;
 }
+
+li.alphabetical_icon:hover {
+    border: 1px solid #DCC7B0;
+}
+
+li.alphabetical_icon:hover span {
+    visibility: visible;
+    transition: 1s all;
+}
