@@ -533,7 +533,178 @@ button.remove_selected_from_builder {
     transform-origin: top left;
 }
 
+body .product__info-wrapper.grid__item {
+    width: 25% !important;
+}
 
+body .product__info-wrapper.grid__item {
+    max-width: 39rem !important;
+    margin: 0 auto;
+}
+
+.selected_letters_and_pro {
+    display: none;
+    width: 100%;
+    background: #fff;
+    padding: 15px 20px;
+}
+
+.selected_letters_and_pro.active {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.selected_letters_and_pro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.selected_letters_and_pro li {
+    width: calc(25% - 12px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected_letters_and_pro li img {
+    max-height: 50px;
+}
+
+.selected_letters_and_pro img {
+    max-width: 100%;
+}
+
+.selected_letters_and_pro button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #bbb;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.892px;
+    text-decoration-line: underline;
+}
+
+.product__info-container>*+* {
+    margin: 1.5rem 0;
+}
+
+p.dfp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 6px;
+}
+
+.dfp span.cl {
+    color: #000;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dfp span.cl:first-child {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+p.hrline {
+    border-bottom: 1px solid #EBEBEB;
+    display: block;
+    padding: 2px 0;
+}
+
+.button {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0 3rem;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: box-shadow .1s ease;
+    appearance: none;
+    background-color: rgba(234, 169, 193, 1);
+    min-width: calc(12rem + 1px * 2);
+    min-height: calc(4.5rem + 1px * 2);
+    border-radius: 0;
+    position: relative;
+}
+
+.loading-overlay__spinner {
+    width: 1.8rem;
+    display: inline-block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.spinner {
+    animation: rotator 1.4s linear infinite;
+}
+
+button.product-form__submit_builder.button {
+    background: #dcc7b0;
+    border: none;
+    box-shadow: none;
+    color: #303030;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    padding: 10px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.button--full-width {
+    display: flex;
+    width: 100%;
+}
+
+.link {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+    color: rgb(var(--color-link));
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-family: inherit;
+}
+
+.product__view-details {
+    display: block;
+    text-decoration: none;
+}
+
+.product:not(.featured-product) .product__view-details {
+    display: none;
+}
+
+.product__view-details .icon {
+    width: 1.2rem;
+    margin-left: 1.2rem;
+    flex-shrink: 0;
+}
 
 @media screen and (min-width: 990px) {
 
@@ -826,5 +997,59 @@ button.remove_selected_from_builder {
         flex-wrap: nowrap;
         gap: 4px 10px;
         overflow-x: auto;
+    }
+    body .product__info-wrapper.grid__item {
+        width: 100% !important;
+        max-width: 100% !important;
+        order: 3;
+    }
+    .selected_letters_and_pro.active {
+        margin: 0;
+    }
+    .necklacebuilder_action_btns {
+        flex-wrap: wrap;
+    }
+    .necklacebuilder_action_btns {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+    button.necklacebuilderedit.button.medium-up-hide {
+        background: transparent;
+        border: 1px solid #000000;
+        box-shadow: none;
+        color: #303030;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    button.necklacebuilderedit.button {
+        width: 30%;
+        min-width: auto;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .product__info-wrapper {
+        padding: 0 0 0 5rem;
+    }
+    .product__info-container {
+        max-width: 60rem;
+    }
+    .product__column-sticky {
+        display: block;
+        position: sticky;
+        top: 3rem;
+        z-index: 2;
+    }
+    .product__info-container>*:first-child {
+        margin-top: 0;
+    }
+    .medium-up-hide {
+        display: none !important;
     }
 }
