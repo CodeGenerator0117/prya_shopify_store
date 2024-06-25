@@ -377,8 +377,8 @@ $(document).on("click", ".btn.add-upsell-btn", function (e) {
                     type: "GET",
                     url: `${routes.cart_url}?view=fullcartdrawer`,
                     success: function (htm) {
-                        $("cart-drawer ").removeClass("is-empty"),
-                            $("cart-drawer ").html(htm),
+                        $("cart-drawer").removeClass("is-empty"),
+                            $("cart-drawer").html(htm),
                             that.find("span").show(),
                             that.find(".loading-overlay__spinner").addClass("hidden"),
                             $(".modal").removeClass("is-visible"),
@@ -462,8 +462,8 @@ $(document).on("click", ".btn.add-upsell-btn-in", function (e) {
                 type: "GET",
                 url: `${routes.cart_url}?view=fullcartdrawer`,
                 success: function (htm) {
-                    $("cart-drawer ").removeClass("is-empty"),
-                        $("cart-drawer ").html(htm),
+                    $("cart-drawer").removeClass("is-empty"),
+                        $("cart-drawer").html(htm),
                         that.find("span").show(),
                         that.find(".loading-overlay__spinner").addClass("hidden"),
                         $(".modal").removeClass("is-visible"),
@@ -746,8 +746,8 @@ $(".product-form__submit_builder").click(function (e) {
                 type: "GET",
                 url: `${routes.cart_url}?view=fullcartdrawer`,
                 success: function (htm) {
-                    $("cart-drawer ").removeClass("is-empty"),
-                        $("cart-drawer ").html(htm),
+                    $("cart-drawer").removeClass("is-empty"),
+                        $("cart-drawer").html(htm),
                         that.find("span").show(),
                         that.find(".loading-overlay__spinner").addClass("hidden"),
                         $(".modal").removeClass("is-visible"),
