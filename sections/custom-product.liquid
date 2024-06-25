@@ -17,20 +17,23 @@
     }
   </style>
   {% assign letters_collection = collections['letters'] %}
-  {
-    "products": [
+
+  {% if letters_collection.products.size > 0 %}
+    <h2>Products in Letters Collection</h2>
+    <div class="letters-collection grid grid-cols-3 gap-4">
       {% for product in letters_collection.products %}
-        {
-          "id": "{{ product.id }}",
-          "title": "{{ product.title | escape }}",
-          "handle": "{{ product.handle }}",
-          "price": "{{ product.price }}",
-          "featured_image": "{{ product.featured_image | img_url: 'medium' }}",
-          "url": "{{ product.url }}"
-        }{% unless forloop.last %},{% endunless %}
+        <div class="product-item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" class="w-full h-auto">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.price | money }}</p>
+          </a>
+        </div>
       {% endfor %}
-    ]
-  }
+    </div>
+  {% else %}
+    <p>No products found in the Letters collection.</p>
+  {% endif %}
 
   <div class="product product--medium product--left product--stacked product--mobile-hide grid grid--1-col grid--2-col-tablet">
     <div class="builder_swatches">
