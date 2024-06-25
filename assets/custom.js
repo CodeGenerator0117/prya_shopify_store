@@ -729,20 +729,15 @@ $(".product-form__submit_builder").click(function (e) {
     // var data = {
     //     items: items_f
     // };
-    var data = {
-        items: [{
-            id: '7978911662168',
-            quantity: 1,
-            properties: {
-                letters_order: 'T,S'
-            }
-        }]
-    };
+
     $.ajax({
         type: "POST",
         url: "/cart/add.js",
         dataType: "json",
-        data,
+        body: JSON.stringify({
+            id: 7978911662168,
+            quantity: 1
+        }),
         success: function (res) {
             $("cart-drawer-items").hasClass("is-empty") ? $.ajax({
                 type: "GET",
