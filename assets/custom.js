@@ -731,7 +731,7 @@ $(".product-form__submit_builder").click(function (e) {
     // };
     let formData = {
         'items': [{
-            'id': 7978911662168,
+            'id': 41876903690328,
             'quantity': 1
         }]
     };
