@@ -729,15 +729,17 @@ $(".product-form__submit_builder").click(function (e) {
     // var data = {
     //     items: items_f
     // };
-
+    let formData = {
+        'items': [{
+            'id': 7978911662168,
+            'quantity': 1
+        }]
+    };
     $.ajax({
         type: "POST",
         url: "/cart/add.js",
         dataType: "json",
-        body: JSON.stringify({
-            id: 7978911662168,
-            quantity: 1
-        }),
+        data: JSON.stringify(formData),
         success: function (res) {
             $("cart-drawer-items").hasClass("is-empty") ? $.ajax({
                 type: "GET",
