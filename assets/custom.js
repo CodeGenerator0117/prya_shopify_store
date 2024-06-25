@@ -743,13 +743,13 @@ $(".product-form__submit_builder").click(function (e) {
         data: JSON.stringify(formData),
         success: function (res) {
             jQuery.getJSON("/cart.js", function (cart) {
-                $("cart-drawer cart-drawer-items .quantity__input").val(res.item_count);
-                let currency = $("cart-drawer cart-drawer-items .price--end").val()[0];
-                let price = Math.round(res.items_subtotal_price) / 100;
+                $("cart-drawer cart-drawer-items .quantity__input").val(cart.item_count);
+                let currency = $("cart-drawer cart-drawer-items .price--end").text().trim().match(/\$[\d,.]+/)[0][0];
+                let price = Math.round(cart.items_subtotal_price) / 100;
                 console.log('currency', currency)
                 console.log('price', price)
-                $("cart-drawer cart-drawer-items .price--end").val(`${currency}${price}`);
-                $("cart-drawer cart-drawer-items .totals__total-value").val(`${currency}${price} ${res.currency}`);
+                $("cart-drawer cart-drawer-items .price--end").text(`${currency}${price}`);
+                $("cart-drawer cart-drawer-items .totals__total-value").text(`${currency}${price} ${cart.currency}`);
                 cartLink.click()
             })
             that.find("span").show(),
