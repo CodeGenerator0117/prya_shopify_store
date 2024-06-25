@@ -766,9 +766,16 @@ $(".product-form__submit_builder").click(function (e) {
                 .then((responseText) => {
                     console.log('responseText2', responseText)
                     $("cart-drawer").removeClass("is-empty");
+                    $("cart-drawer-items").removeClass("is-empty");
                     const html = new DOMParser().parseFromString(responseText, 'text/html');
-                    const sourceQty = html.querySelector('cart-items');
-                    this.innerHTML = sourceQty.innerHTML;
+                    const selectors = ['cart-drawer-items', '.cart-drawer__footer'];
+                    for (const selector of selectors) {
+                        const targetElement = document.querySelector(selector);
+                        const sourceElement = html.querySelector(selector);
+                        if (targetElement && sourceElement) {
+                            targetElement.replaceWith(sourceElement);
+                        }
+                    }
                 })
                 .catch((e) => {
                     console.error(e);
