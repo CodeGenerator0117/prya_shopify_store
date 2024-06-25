@@ -772,6 +772,15 @@ $(".product-form__submit_builder").click(function (e) {
                     console.error(e);
                 });
             }
+            jQuery.getJSON("/cart.js", function (cart) {
+                if ($(".cart-count-bubble")[0])
+                    $(".cart-count-bubble span").html(cart.item_count);
+                else {
+                    var dt = '<div class="cart-count-bubble"><span aria-hidden="true">' + cart.item_count + '</span><span class="visually-hidden">' + cart.item_count + " item</span> </div>";
+                    $("#cart-icon-bubble").append(dt)
+                }
+                cartLink.click()
+            })
             that.hasClass("propage") && $("cart-drawer").addClass("animate active")
             that.find("span").show(),
             that.find(".loading-overlay__spinner").addClass("hidden")
