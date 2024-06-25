@@ -743,7 +743,7 @@ $(".product-form__submit_builder").click(function (e) {
         data: JSON.stringify(formData),
         success: function (res) {
             if (!$("cart-drawer-items").hasClass("is-empty")) {
-                fetch(`${routes.cart_url}?section_id=cart-drawer`)
+                fetch(`/cart?section_id=cart-drawer`)
                     .then((response) => response.text())
                     .then((responseText) => {
                     const html = new DOMParser().parseFromString(responseText, 'text/html');
@@ -760,7 +760,7 @@ $(".product-form__submit_builder").click(function (e) {
                     console.error(e);
                 });
               } else {
-                fetch(`${routes.cart_url}?section_id=main-cart-items`)
+                fetch(`/cart?section_id=main-cart-items`)
                 .then((response) => response.text())
                 .then((responseText) => {
                     $("cart-drawer").removeClass("is-empty");
