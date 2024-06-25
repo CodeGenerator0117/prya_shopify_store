@@ -668,7 +668,7 @@
                 
                 <p class="chains_pricing dfp">
                   <span class="cl">{{ product.title | escape }}</span>
-                  <span class="cl">{{ product.price | money_with_currency }}</span>
+                  <span class="cl">{{ product.price | money }}</span>
                 </p>
                 <p class="hrline"></p>
                 <p class="total_builder_price dfp">
@@ -846,7 +846,6 @@
         </svg>
     </div>
 </div>
-<pre>{{ product | json }}</pre>
 
 <style>
   .variant-wrapper_drawer {
