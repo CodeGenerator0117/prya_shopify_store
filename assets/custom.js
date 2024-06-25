@@ -742,36 +742,17 @@ $(".product-form__submit_builder").click(function (e) {
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(formData),
         success: function (res) {
-            if (!$("cart-drawer-items").hasClass("is-empty")) {
-                fetch(`/cart?section_id=cart-drawer`)
-                    .then((response) => response.text())
-                    .then((responseText) => {
-                    const html = new DOMParser().parseFromString(responseText, 'text/html');
-                    const selectors = ['cart-drawer-items', '.cart-drawer__footer'];
-                    for (const selector of selectors) {
-                        const targetElement = document.querySelector(selector);
-                        const sourceElement = html.querySelector(selector);
-                        if (targetElement && sourceElement) {
-                            targetElement.replaceWith(sourceElement);
-                        }
-                    }
-                })
-                .catch((e) => {
-                    console.error(e);
-                });
-              } else {
-                fetch(`/cart?section_id=main-cart-items`)
-                .then((response) => response.text())
-                .then((responseText) => {
-                    $("cart-drawer").removeClass("is-empty");
-                    const html = new DOMParser().parseFromString(responseText, 'text/html');
-                    const sourceQty = html.querySelector('cart-items');
-                    this.innerHTML = sourceQty.innerHTML;
-                })
-                .catch((e) => {
-                    console.error(e);
-                });
-            }
+            fetch(`/cart?section_id=main-cart-items`)
+            .then((response) => response.text())
+            .then((responseText) => {
+                $("cart-drawer").removeClass("is-empty");
+                const html = new DOMParser().parseFromString(responseText, 'text/html');
+                const sourceQty = html.querySelector('cart-items');
+                this.innerHTML = sourceQty.innerHTML;
+            })
+            .catch((e) => {
+                console.error(e);
+            });
             jQuery.getJSON("/cart.js", function (cart) {
                 if ($(".cart-count-bubble")[0])
                     $(".cart-count-bubble span").html(cart.item_count);
