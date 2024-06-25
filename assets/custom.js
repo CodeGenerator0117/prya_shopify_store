@@ -742,23 +742,7 @@ $(".product-form__submit_builder").click(function (e) {
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(formData),
         success: function (res) {
-            $("cart-drawer-items").hasClass("is-empty") ? $.ajax({
-                type: "GET",
-                url: `${routes.cart_url}?view=fullcartdrawer`,
-                success: function (htm) {
-                    $("cart-drawer").removeClass("is-empty"),
-                        $("cart-drawer").html(htm),
-                        that.find("span").show(),
-                        that.find(".loading-overlay__spinner").addClass("hidden"),
-                        $(".modal").removeClass("is-visible"),
-                        that.hasClass("propage") && $("cart-drawer").addClass("animate active")
-                },
-                error: function (err) {
-                    console.log(err),
-                        that.find("span").show(),
-                        that.find(".loading-overlay__spinner").addClass("hidden")
-                }
-            }) : $.ajax({
+            $.ajax({
                 type: "GET",
                 url: `${routes.cart_url}?view=rendercart`,
                 success: function (htm) {
@@ -773,16 +757,7 @@ $(".product-form__submit_builder").click(function (e) {
                         that.find("span").show(),
                         that.find(".loading-overlay__spinner").addClass("hidden")
                 }
-            }),
-                jQuery.getJSON("/cart.js", function (cart) {
-                    if ($(".cart-count-bubble")[0])
-                        $(".cart-count-bubble span").html(cart.item_count);
-                    else {
-                        var dt = '<div class="cart-count-bubble"><span aria-hidden="true">' + cart.item_count + '</span><span class="visually-hidden">' + cart.item_count + " item</span> </div>";
-                        $("#cart-icon-bubble").append(dt)
-                    }
-                    cartLink.click()
-                })
+            })
         },
         error: function (err) {
             console.log(err),
