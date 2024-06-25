@@ -739,6 +739,7 @@ $(".product-form__submit_builder").click(function (e) {
         type: "POST",
         url: "/cart/add.js",
         dataType: "json",
+        contentType: "application/json; charset=utf-8",
         data: JSON.stringify(formData),
         success: function (res) {
             $("cart-drawer-items").hasClass("is-empty") ? $.ajax({
