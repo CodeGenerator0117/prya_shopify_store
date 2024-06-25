@@ -726,8 +726,19 @@ $(".product-form__submit_builder").click(function (e) {
         }
     };
     items_f.push(current_pro);
+    // var data = {
+    //     items: items_f
+    // };
     var data = {
-        items: items_f
+        items: [].push(
+            {
+                id: '7978911662168',
+                quantity: 1,
+                properties: {
+                    letters_order: 'T,S'
+                }
+            }
+        )
     };
     $.ajax({
         type: "POST",
