@@ -16,8 +16,9 @@
       }
     }
   </style>
-  {% assign letters_collection = collections[1] %}
-  <pre>{{ collections }}</pre>
+  {% for product in collections['letters'].products %}
+    {{- product.title | link_to: product.url }}
+  {% endfor %}
 
   <div class="product product--medium product--left product--stacked product--mobile-hide grid grid--1-col grid--2-col-tablet">
     <div class="builder_swatches">
