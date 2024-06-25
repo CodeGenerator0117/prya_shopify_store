@@ -377,8 +377,8 @@ $(document).on("click", ".btn.add-upsell-btn", function (e) {
                     type: "GET",
                     url: `${routes.cart_url}?view=fullcartdrawer`,
                     success: function (htm) {
-                        $("cart-drawer").removeClass("is-empty"),
-                            $("cart-drawer").html(htm),
+                        $("cart-drawer ").removeClass("is-empty"),
+                            $("cart-drawer ").html(htm),
                             that.find("span").show(),
                             that.find(".loading-overlay__spinner").addClass("hidden"),
                             $(".modal").removeClass("is-visible"),
@@ -462,8 +462,8 @@ $(document).on("click", ".btn.add-upsell-btn-in", function (e) {
                 type: "GET",
                 url: `${routes.cart_url}?view=fullcartdrawer`,
                 success: function (htm) {
-                    $("cart-drawer").removeClass("is-empty"),
-                        $("cart-drawer").html(htm),
+                    $("cart-drawer ").removeClass("is-empty"),
+                        $("cart-drawer ").html(htm),
                         that.find("span").show(),
                         that.find(".loading-overlay__spinner").addClass("hidden"),
                         $(".modal").removeClass("is-visible"),
@@ -742,14 +742,37 @@ $(".product-form__submit_builder").click(function (e) {
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(formData),
         success: function (res) {
-            jQuery.getJSON("/cart.js", function (cart) {
-                $("cart-drawer cart-drawer-items .quantity__input").val(cart.item_count);
-                let currency = $("cart-drawer cart-drawer-items .price--end").text().trim().match(/\$[\d,.]+/)[0][0];
-                let price = Math.round(cart.items_subtotal_price) / 100;
-                $("cart-drawer cart-drawer-items .price--end").text(`${currency}${price}`);
-                $("cart-drawer .totals__total-value").text(`${currency}${price} ${cart.currency}`);
-                cartLink.click()
-            })
+            if (!$("cart-drawer-items").hasClass("is-empty")) {
+                fetch(`${routes.cart_url}?section_id=cart-drawer`)
+                    .then((response) => response.text())
+                    .then((responseText) => {
+                    const html = new DOMParser().parseFromString(responseText, 'text/html');
+                    const selectors = ['cart-drawer-items', '.cart-drawer__footer'];
+                    for (const selector of selectors) {
+                        const targetElement = document.querySelector(selector);
+                        const sourceElement = html.querySelector(selector);
+                        if (targetElement && sourceElement) {
+                            targetElement.replaceWith(sourceElement);
+                        }
+                    }
+                })
+                .catch((e) => {
+                    console.error(e);
+                });
+              } else {
+                fetch(`${routes.cart_url}?section_id=main-cart-items`)
+                .then((response) => response.text())
+                .then((responseText) => {
+                    $("cart-drawer").removeClass("is-empty");
+                    const html = new DOMParser().parseFromString(responseText, 'text/html');
+                    const sourceQty = html.querySelector('cart-items');
+                    this.innerHTML = sourceQty.innerHTML;
+                })
+                .catch((e) => {
+                    console.error(e);
+                });
+            }
+            that.hasClass("propage") && $("cart-drawer").addClass("animate active")
             that.find("span").show(),
             that.find(".loading-overlay__spinner").addClass("hidden")
         },
