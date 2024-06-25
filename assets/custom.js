@@ -746,8 +746,12 @@ $(".product-form__submit_builder").click(function (e) {
                 type: "GET",
                 url: `${routes.cart_url}?view=fullcartdrawer`,
                 success: function (htm) {
-                    that.find("span").show(),
-                    that.find(".loading-overlay__spinner").addClass("hidden")
+                    $("cart-drawer ").removeClass("is-empty"),
+                        $("cart-drawer ").html(htm),
+                        that.find("span").show(),
+                        that.find(".loading-overlay__spinner").addClass("hidden"),
+                        $(".modal").removeClass("is-visible"),
+                        that.hasClass("propage") && $("cart-drawer").addClass("animate active")
                 },
                 error: function (err) {
                     console.log(err),
@@ -758,8 +762,11 @@ $(".product-form__submit_builder").click(function (e) {
                 type: "GET",
                 url: `${routes.cart_url}?view=rendercart`,
                 success: function (htm) {
-                    that.find("span").show(),
-                    that.find(".loading-overlay__spinner").addClass("hidden")
+                    $("#CartDrawer-CartItems").html(htm),
+                        that.find("span").show(),
+                        that.find(".loading-overlay__spinner").addClass("hidden"),
+                        $(".modal").removeClass("is-visible"),
+                        that.hasClass("propage") && $("cart-drawer").addClass("animate active")
                 },
                 error: function (err) {
                     console.log(err),
