@@ -746,6 +746,9 @@ $(".product-form__submit_builder").click(function (e) {
             .then((response) => response.text())
             .then((responseText) => {
                 console.log('responseText1', responseText)
+                $("cart-drawer").removeClass("is-empty");
+                $("cart-drawer-items").removeClass("is-empty");
+                $(".drawer__inner-empty").removeClass("drawer__inner-empty");
                 const html = new DOMParser().parseFromString(responseText, 'text/html');
                 const selectors = ['cart-drawer-items', '.cart-drawer__footer'];
                 for (const selector of selectors) {
