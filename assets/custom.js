@@ -743,12 +743,13 @@ $(".product-form__submit_builder").click(function (e) {
         data: JSON.stringify(formData),
         success: function (res) {
             jQuery.getJSON("/cart.js", function (cart) {
-                if ($(".cart-count-bubble")[0])
-                    $(".cart-count-bubble span").html(cart.item_count);
-                else {
-                    var dt = '<div class="cart-count-bubble"><span aria-hidden="true">' + cart.item_count + '</span><span class="visually-hidden">' + cart.item_count + " item</span> </div>";
-                    $("#cart-icon-bubble").append(dt)
-                }
+                $("cart-drawer cart-drawer-items .quantity__input").val(res.item_count);
+                let currency = $("cart-drawer cart-drawer-items .price--end").val()[0];
+                let price = Math.round(res.items_subtotal_price) / 100;
+                console.log('currency', currency)
+                console.log('price', price)
+                $("cart-drawer cart-drawer-items .price--end").val(`${currency}${price}`);
+                $("cart-drawer cart-drawer-items .totals__total-value").val(`${currency}${price} ${res.currency}`);
                 cartLink.click()
             })
             that.find("span").show(),
