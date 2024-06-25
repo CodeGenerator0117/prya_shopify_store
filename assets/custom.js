@@ -742,15 +742,14 @@ $(".product-form__submit_builder").click(function (e) {
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(formData),
         success: function (res) {
-            jQuery.getJSON("/cart.js", function (cart) {
-                $("cart-drawer cart-drawer-items .quantity__input").val(cart.item_count);
-                let currency = $("cart-drawer cart-drawer-items .price--end").text().trim().match(/\$[\d,.]+/)[0][0];
-                let price = Math.round(cart.items_subtotal_price) / 100;
-                console.log('currency', currency)
-                console.log('price', price)
-                $("cart-drawer cart-drawer-items .price--end").text(`${currency}${price}`);
-                $("cart-drawer cart-drawer-items .totals__total-value").text(`${currency}${price} ${cart.currency}`);
-                cartLink.click()
+            jQuery.getJSON("/cart", function (cart) {
+                console.log(cart)
+                // $("cart-drawer cart-drawer-items .quantity__input").val(cart.item_count);
+                // let currency = $("cart-drawer cart-drawer-items .price--end").text().trim().match(/\$[\d,.]+/)[0][0];
+                // let price = Math.round(cart.items_subtotal_price) / 100;
+                // $("cart-drawer cart-drawer-items .price--end").text(`${currency}${price}`);
+                // $("cart-drawer .totals__total-value").text(`${currency}${price} ${cart.currency}`);
+                // cartLink.click()
             })
             that.find("span").show(),
             that.find(".loading-overlay__spinner").addClass("hidden")
