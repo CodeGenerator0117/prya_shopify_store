@@ -16,7 +16,7 @@
       }
     }
   </style>
-  <pre>{{ product | json }}</pre>
+
   <div class="product product--medium product--left product--stacked product--mobile-hide grid grid--1-col grid--2-col-tablet">
     <div class="builder_swatches">
       <ul class="builder_tabs">
@@ -667,8 +667,8 @@
                   </p>
                 
                 <p class="chains_pricing dfp">
-                  <span class="cl">The Stacking Chain Gold</span>
-                  <span class="cl">€48,95</span>
+                  <span class="cl">{{ product.title | escape }}</span>
+                  <span class="cl">{{ product.price | money_with_currency }}</span>
                 </p>
                 <p class="hrline"></p>
                 <p class="total_builder_price dfp">
@@ -679,7 +679,7 @@
             
               <input type="hidden" value="" class="necklacebuilder_value_properties">
               <input type="hidden" value="" class="necklacebuilder_value">
-              <input type="hidden" value="47477236498750" class="current_product_value">
+              <input type="hidden" value="{{ product.id }}" class="current_product_value">
               <div class="necklacebuilder_action_btns">
                 <button class="necklacebuilderedit button medium-up-hide drawer_open_builder" atr="edit_necklacebuilder" type="button">
                   <span>Edit</span>
@@ -846,6 +846,7 @@
         </svg>
     </div>
 </div>
+<pre>{{ product | json }}</pre>
 
 <style>
   .variant-wrapper_drawer {
