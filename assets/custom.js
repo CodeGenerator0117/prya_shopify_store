@@ -726,21 +726,21 @@ $(".product-form__submit_builder").click(function (e) {
         }
     };
     items_f.push(current_pro);
-    // var data = {
-    //     items: items_f
-    // };
-    let formData = {
-        'items': [{
-            'id': 41876903690328,
-            'quantity': 1
-        }]
+    var data = {
+        items: items_f
     };
+    // let formData = {
+    //     'items': [{
+    //         'id': 41876903690328,
+    //         'quantity': 1
+    //     }]
+    // };
     $.ajax({
         type: "POST",
         url: "/cart/add.js",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(formData),
+        data: JSON.stringify(data),
         success: function (res) {
             fetch(`/cart?section_id=cart-drawer`)
             .then((response) => response.text())

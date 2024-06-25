@@ -16,8 +16,10 @@
       }
     }
   </style>
-  {% for product in collections['letters'].products %}
-    {{- product.title | link_to: product.url }}
+  {% for collection in collections %}
+    {% if collection.title == "letters" %}
+      {% assign letters_collection = collection %}
+    {% endif %}
   {% endfor %}
 
   <div class="product product--medium product--left product--stacked product--mobile-hide grid grid--1-col grid--2-col-tablet">
@@ -38,758 +40,199 @@
           </li>
       </ul>
       <p class="current_builder_active_tabs">PAVED BALLOONS</p>
-      
-        <ul class="builder_tabstabcontent current" id="builder_tabstabcontent-1">
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="A" dataid="47606836494654" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_A.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="B" dataid="47606837182782" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_B.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="C" dataid="47606837248318" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_C.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="D" dataid="47606837281086" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_D.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="E" dataid="47606837313854" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_E.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="F" dataid="47606837346622" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_F.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="G" dataid="47606837379390" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_G.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="H" dataid="47606837412158" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_H.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="I" dataid="47606837444926" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_I.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="J" dataid="47606837477694" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_J.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="K" dataid="47606837510462" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_K.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="L" dataid="47606837543230" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_L.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="M" dataid="47606837575998" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_M.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="N" dataid="47606837608766" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_N.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="O" dataid="47606837641534" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_O.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="P" dataid="47606837674302" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_P.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="Q" dataid="47606837707070" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_Q.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="R" dataid="47606837772606" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_R.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="S" dataid="47606837805374" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_S.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="T" dataid="47606837838142" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_T.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="U" dataid="47606837870910" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_U.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="V" dataid="47606837903678" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_V.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="W" dataid="47606837936446" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_W.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="X" dataid="47606837969214" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_X.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="Y" dataid="47606838001982" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_Y.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="balloon" datatitle="Z" dataid="47606838034750" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Treats_MiniBalloon_Z.png?v=1700505055" type_of_necklace="letter" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-        </ul>
-      
-        <ul class="builder_tabstabcontent " id="builder_tabstabcontent-2">
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="A" dataid="47637446197566" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/A_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="B" dataid="47637446590782" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/B_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="C" dataid="47637446623550" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/C_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="D" dataid="47637446656318" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/D_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="E" dataid="47637446689086" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/E_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="F" dataid="47637446721854" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/F_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="G" dataid="47637446754622" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/G_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="H" dataid="47637446787390" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/H_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="I" dataid="47637446820158" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/I_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="J" dataid="47637446852926" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/J_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="K" dataid="47637446885694" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/K_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="L" dataid="47637446951230" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/L_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="M" dataid="47637446983998" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/M_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="N" dataid="47637447016766" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/N_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="O" dataid="47637447049534" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/O_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="P" dataid="47637447082302" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/P_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="Q" dataid="47637447115070" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Q_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="R" dataid="47637447147838" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/R_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="S" dataid="47637447180606" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/S_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="T" dataid="47637447213374" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/T_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="U" dataid="47637447246142" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/U_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="V" dataid="47637447278910" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/V_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon  vnot_available" dataproducttitle="heart" datatitle="W" dataid="47637447311678" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/W_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="X" dataid="47637447344446" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/X_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon  vnot_available" dataproducttitle="heart" datatitle="Y" dataid="47637447377214" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Y_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="heart" datatitle="Z" dataid="47637447409982" dataprice="€54,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/Z_PAVED_HEART_SHADOW.png?v=1700505055" type_of_necklace="heart" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-        </ul>
-      
-        <ul class="builder_tabstabcontent " id="builder_tabstabcontent-3">
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="A" dataid="48611477619006" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_A.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="B" dataid="48611477651774" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_B.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="C" dataid="48611477684542" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_C.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="D" dataid="48611477717310" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_D.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="E" dataid="48611477750078" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_E.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="F" dataid="48611477782846" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_F.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="G" dataid="48611477815614" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_G.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="H" dataid="48611477848382" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_H.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="I" dataid="48611477881150" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_I.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="J" dataid="48611477913918" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_J.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="K" dataid="48611477946686" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_K.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="L" dataid="48611477979454" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_L.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="M" dataid="48611478012222" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_M.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="N" dataid="48611478044990" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_N.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="O" dataid="48611478077758" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_O.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="P" dataid="48611478110526" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_P.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="Q" dataid="48611478143294" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_Q.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="R" dataid="48611478176062" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_R.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="S" dataid="48611478208830" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_S.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="T" dataid="48611478241598" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_T.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="U" dataid="48611478274366" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_U.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="V" dataid="48611478307134" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_V.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="W" dataid="48611478339902" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_W.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="X" dataid="48611478372670" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_X.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="Y" dataid="48611478405438" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_Y.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-            <li class="alphabetical_icon " dataproducttitle="silver" datatitle="Z" dataid="48611478438206" dataprice="€60,95">
-              
-                <img src="https://cdn.shopify.com/s/files/1/0666/6744/6590/files/letters_Z.png?v=1700505055" type_of_necklace="smooth-gold" loading="lazy">
-              
-              <span>ADD</span>
-            </li>
-          
-        </ul>
-      
+        {% for letter_product in letters_collection.products %}
+          {% if letter_product.title == "Paved Balloon" %}
+            <ul class="builder_tabstabcontent current" id="builder_tabstabcontent-1">
+              {% for variant in letter_product.variants %}
+                <li class="alphabetical_icon" dataproducttitle="balloon" datatitle="{{ variant.title }}" dataid="{{ variant.id }}" dataprice="{{ variant.price | money }}">
+                  <img src="{{ variant.featured_image | img_url: 'medium' }}" alt="{{ variant.title }}" type_of_necklace="letter" loading="lazy">
+                  <span>ADD</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {%- elsif letter_product.title == "Paved Heart Initial Pendant Gold" -%}
+            <ul class="builder_tabstabcontent " id="builder_tabstabcontent-2">
+              {% for variant in letter_product.variants %}
+                <li class="alphabetical_icon " dataproducttitle="heart" datatitle="{{ variant.title }}" dataid="{{ variant.id }}" dataprice="{{ variant.price | money }}">
+                  <img src="{{ variant.featured_image | img_url: 'medium' }}" alt="{{ variant.title }}" type_of_necklace="heart" loading="lazy">
+                  <span>ADD</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {%- else -%}
+            <ul class="builder_tabstabcontent " id="builder_tabstabcontent-3">
+              {% for variant in letter_product.variants %}
+                <li class="alphabetical_icon " dataproducttitle="silver" datatitle="{{ variant.title }}" dataid="{{ variant.id }}" dataprice="{{ variant.price | money }}">
+                  <img src="{{ variant.featured_image | img_url: 'medium' }}" alt="{{ variant.title }}" type_of_necklace="smooth-gold" loading="lazy">
+                  <span>ADD</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endfor %}
       <div class="errormessage_builder">
       </div>
     </div>
     <div class="grid__item product__media-wrapper">
-    
-      
       <div class="builderChainProduct" style="width: 100%;">
-         <div class="builderChainProductImage" style="">
-           <div class="builderChainContent">
-             <p class="fst">Click on the letters</p> 
-             <p class="coloured_text">to ADD them to your necklace</p>
-           </div>
-           <img src="https://treatsstudio.co.uk/cdn/shop/files/plain_chain_no_shadow_40bbbabc-3024-47d9-9e87-7e189598e726.png?v=1709658700" loading="lazy">
-         </div>
-         <div class="builderChainPoint" data-point="1" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="2" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="3" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="4" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="5" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="6" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="7" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="8" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="9" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="10" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="11" data-style="odd" style=""></div>
-         <div class="builderChainPoint" data-point="1" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="2" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="3" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="4" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="5" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="6" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="7" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="8" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="9" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="10" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="11" data-style="even" style=""></div>
-         <div class="builderChainPoint" data-point="12" data-style="even" style=""></div>
+        <div class="builderChainProductImage" style="">
+          <div class="builderChainContent">
+            <p class="fst">Click on the letters</p> 
+            <p class="coloured_text">to ADD them to your necklace</p>
+          </div>
+          <img src="https://treatsstudio.co.uk/cdn/shop/files/plain_chain_no_shadow_40bbbabc-3024-47d9-9e87-7e189598e726.png?v=1709658700" loading="lazy">
+        </div>
+        <div class="builderChainPoint" data-point="1" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="2" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="3" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="4" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="5" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="6" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="7" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="8" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="9" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="10" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="11" data-style="odd" style=""></div>
+        <div class="builderChainPoint" data-point="1" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="2" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="3" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="4" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="5" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="6" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="7" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="8" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="9" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="10" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="11" data-style="even" style=""></div>
+        <div class="builderChainPoint" data-point="12" data-style="even" style=""></div>
       </div>
     </div>
     <div class="product__info-wrapper grid__item">
       <product-info id="ProductInfo-template--22385408246078__main" data-section="template--22385408246078__main" data-url="/products/the-stacking-chain-gold" class="product__info-container product__column-sticky">
-            
-            
-            
-
-            
-            
-          
-            <div class="selected_letters_and_pro small-hide">
-              
+        <div class="selected_letters_and_pro small-hide"></div>
+        <input type="hidden" class="builder_base_price" value="€48,95">
+        <div class="builder_pricing_wrapper">
+          <p class="letters_pricing dfp balloon">
+            <span class="cl"><span class="nmbs">0</span> Paved Balloon</span>
+            <span class="cl"><span class="nmbs">0</span> x <span class="prcing">€60,95</span></span>
+          </p>
+          <p class="letters_pricing dfp heart">
+            <span class="cl"><span class="nmbs">0</span> Paved Heart Initial Pendant - Gold</span>
+            <span class="cl"><span class="nmbs">0</span> x <span class="prcing">€54,95</span></span>
+          </p>
+          <p class="letters_pricing dfp silver">
+            <span class="cl"><span class="nmbs">0</span> Gold Balloon</span>
+            <span class="cl"><span class="nmbs">0</span> x <span class="prcing">€60,95</span></span>
+          </p>
+          <p class="chains_pricing dfp">
+            <span class="cl">{{ product.title | escape }}</span>
+            <span class="cl">{{ product.price | money }}</span>
+          </p>
+          <p class="hrline"></p>
+          <p class="total_builder_price dfp">
+            <span class="cl tlabel">Total</span>
+            <span class="cl tprice">-</span>
+          </p>
+        </div>
+        <input type="hidden" value="" class="necklacebuilder_value_properties">
+        <input type="hidden" value="" class="necklacebuilder_value">
+        <input type="hidden" value="{{ product.variants[0].id }}" class="current_product_value">
+        <div class="necklacebuilder_action_btns">
+          <button class="necklacebuilderedit button medium-up-hide drawer_open_builder" atr="edit_necklacebuilder" type="button">
+            <span>Edit</span>
+            <div class="loading-overlay__spinner hidden">
+              <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
             </div>
-            
-            
-            <input type="hidden" class="builder_base_price" value="€48,95">
-              
-              <div class="builder_pricing_wrapper">
-                
-                  <p class="letters_pricing dfp balloon">
-                    <span class="cl"><span class="nmbs">0</span> Paved Balloon</span>
-                    <span class="cl"><span class="nmbs">0</span> x <span class="prcing">€60,95</span></span>
-                  </p>
-                
-                  <p class="letters_pricing dfp heart">
-                    <span class="cl"><span class="nmbs">0</span> Paved Heart Initial Pendant - Gold</span>
-                    <span class="cl"><span class="nmbs">0</span> x <span class="prcing">€54,95</span></span>
-                  </p>
-                
-                  <p class="letters_pricing dfp silver">
-                    <span class="cl"><span class="nmbs">0</span> Gold Balloon</span>
-                    <span class="cl"><span class="nmbs">0</span> x <span class="prcing">€60,95</span></span>
-                  </p>
-                
-                <p class="chains_pricing dfp">
-                  <span class="cl">{{ product.title | escape }}</span>
-                  <span class="cl">{{ product.price | money }}</span>
-                </p>
-                <p class="hrline"></p>
-                <p class="total_builder_price dfp">
-                  <span class="cl tlabel">Total</span>
-                  <span class="cl tprice">-</span>
-                </p>
+          </button>
+          <button class="product-form__submit_builder button button--full-width button--secondary" type="button" disabled="">
+            <span>Select Letters</span>
+              <div class="loading-overlay__spinner hidden">
+                <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
               </div>
-            
-              <input type="hidden" value="" class="necklacebuilder_value_properties">
-              <input type="hidden" value="" class="necklacebuilder_value">
-              <input type="hidden" value="{{ product.variants[0].id }}" class="current_product_value">
-              <div class="necklacebuilder_action_btns">
-                <button class="necklacebuilderedit button medium-up-hide drawer_open_builder" atr="edit_necklacebuilder" type="button">
-                  <span>Edit</span>
-                   <div class="loading-overlay__spinner hidden">
-                      <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                         <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                   </div>
-                </button>
-                <button class="product-form__submit_builder button button--full-width button--secondary" type="button" disabled="">
-                  <span>Select Letters</span>
-                   <div class="loading-overlay__spinner hidden">
-                      <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                         <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                   </div>
-                </button>
-              </div>
-              
-
-            
-
-
-
-
-<style>
-  .product-form__input input[type=radio]:checked+label, 
-  body .product-form__input input[type=radio]+label:hover {
-    border-color: #dcc7b0;
-  }
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
+          </button>
+        </div>
+        <style>
+          .product-form__input input[type=radio]:checked+label, 
+          body .product-form__input input[type=radio]+label:hover {
+            border-color: #dcc7b0;
+          }
+        </style>
         <a href="/products/the-stacking-chain-gold" class="link product__view-details animate-arrow">
           View full details
           <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</path></svg>
-
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+            </path>
+          </svg>
         </a>
       </product-info>
-    </div></div>
+    </div>
+  </div>
   <div id="ol"></div>
-<div class="ele_cart-drawer ele_cart-drawer-right"> 
+  <div class="ele_cart-drawer ele_cart-drawer-right"> 
     <h3 class="drawer_description common_status_manage">Description</h3>
     <h3 class="drawer_deliverycontent common_status_manage">Delivery &amp; Returns</h3>
     <h3 class="drawer_inspiration common_status_manage">Inspiration</h3>
     <div class="variant-wrapper_drawer variant-wrapper--button_drawer">
       <div class="drawer_description common_status_manage">
         <p><b>Description</b><br></p>
-<p>Our stacking chain is the only chain that can be worn with our mini balloon letters due to our unique pin and 2 ball stopper closure. The two items paired together make the ultimate personalised statement&nbsp;piece,&nbsp;that can be worn in over 4 ways. <em><span style="text-decoration: underline;">See our how to wear guide for more inspiration!</span></em></p>
-<p>When you receive your chain, simply glide the balloon letters over the pin end of the necklace and space them as you like. We recommend a maximum of 5 letters to be worn on the chain. Our chains come in our custom velvet treats box and all purchased letters will come separately for you to thread on.&nbsp;</p>
-<p>Our stacking chain is one length at a maximum of 45cm, but please note, that the more letters you add on, the shorter the chain will be on your neck. The chain can be shortened to whatever length you desire.</p>
-<p><strong>*Please note all 3 pendants can be worn on same chain*</strong></p>
-<p class="p1"><strong>Details</strong></p>
-<ul class="ul1">
-<li class="li1">
-<span class="s1"></span>Stacking chain with ’t’ branding</li>
-<li class="li1">
-<span class="s1"></span>Pin and 2 ball closure with stopper</li>
-<li class="li1">
-<span class="s1"></span>Gold colour with silver stones</li>
-<li class="li1">
-<span class="s1"></span>Mini 3D balloon letters<span class="Apple-converted-space">&nbsp;</span>
-</li>
-<li class="li1">
-<span class="s1"></span>Rubber stoppers inside letters for personalised spacing</li>
-<li class="li1">
-<span class="s1"></span>18K gold plated brass</li>
-<li class="li1">
-<span class="s1"></span>Rhodium coated&nbsp;</li>
-</ul>
-<p class="p1"><b>SIZE</b></p>
-<ul class="ul1">
-<li class="li1">
-<span class="s1"></span>1cm height letters</li>
-<li class="li1">
-<span class="s1"></span>45cm/18inch length adjustable chain</li>
-</ul>
-<p class="p1"><b>CARE</b></p>
-<ul class="ul1">
-<li class="li1">
-<span class="s1"></span><b>Waterproof</b>
-</li>
-<li class="li1">
-<span class="s1"></span><b>Tarnish Proof</b>
-</li>
-</ul>
+        <p>Our stacking chain is the only chain that can be worn with our mini balloon letters due to our unique pin and 2 ball stopper closure. The two items paired together make the ultimate personalised statement&nbsp;piece,&nbsp;that can be worn in over 4 ways. <em><span style="text-decoration: underline;">See our how to wear guide for more inspiration!</span></em></p>
+        <p>When you receive your chain, simply glide the balloon letters over the pin end of the necklace and space them as you like. We recommend a maximum of 5 letters to be worn on the chain. Our chains come in our custom velvet treats box and all purchased letters will come separately for you to thread on.&nbsp;</p>
+        <p>Our stacking chain is one length at a maximum of 45cm, but please note, that the more letters you add on, the shorter the chain will be on your neck. The chain can be shortened to whatever length you desire.</p>
+        <p><strong>*Please note all 3 pendants can be worn on same chain*</strong></p>
+        <p class="p1"><strong>Details</strong></p>
+        <ul class="ul1">
+          <li class="li1">
+            <span class="s1"></span>Stacking chain with ’t’ branding
+          </li>
+          <li class="li1">
+            <span class="s1"></span>Pin and 2 ball closure with stopper
+          </li>
+          <li class="li1">
+            <span class="s1"></span>Gold colour with silver stones
+          </li>
+          <li class="li1">
+            <span class="s1"></span>Mini 3D balloon letters<span class="Apple-converted-space">&nbsp;</span>
+          </li>
+          <li class="li1">
+            <span class="s1"></span>Rubber stoppers inside letters for personalised spacing
+          </li>
+          <li class="li1">
+            <span class="s1"></span>18K gold plated brass
+          </li>
+          <li class="li1">
+            <span class="s1"></span>Rhodium coated&nbsp;
+          </li>
+        </ul>
+        <p class="p1"><b>SIZE</b></p>
+        <ul class="ul1">
+          <li class="li1">
+            <span class="s1"></span>1cm height letters
+          </li>
+          <li class="li1">
+            <span class="s1"></span>45cm/18inch length adjustable chain
+          </li>
+        </ul>
+        <p class="p1"><b>CARE</b></p>
+        <ul class="ul1">
+          <li class="li1">
+            <span class="s1"></span><b>Waterproof</b>
+          </li>
+          <li class="li1">
+            <span class="s1"></span><b>Tarnish Proof</b>
+          </li>
+        </ul>
       </div>
       <div class="drawer_deliverycontent common_status_manage">
         <p>All of your treats are shipped via DPD both nationally and internationally. More information about the different services we offer are on the&nbsp;<a href="/policies/shipping-policy" title="Shipping Policy">delivery&nbsp;page</a>.<br><br>We hope you love your treats but just in case we offer a 14 day returns policy, please see our <a href="/policies/refund-policy" title="Refund Policy">returns page</a> for further information and terms&nbsp;and&nbsp;conditions.</p>
       </div>
       <div class="drawer_edit_necklacebuilder common_status_manage insidedrawer">        
         <div class="selected_letters_and_pro medium-up-hide">
-          
         </div>         
-         <div class="builder_pricing_wrapper-parent">
+        <div class="builder_pricing_wrapper-parent">
           <div class="builder_pricing_wrapper">
               <p class="letters_pricing dfp">
                 <span class="cl"><span class="nmbs">0</span> </span>
@@ -811,131 +254,123 @@
             <div class="necklacebuilder_action_btns">
               <button class="necklacebuilderedit button medium-up-hide ele_cart-drawer-close-back" type="button">
                 <span>&lt; Back</span>
-                 <div class="loading-overlay__spinner hidden">
+                <div class="loading-overlay__spinner hidden">
                     <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                       <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                     </svg>
-                 </div>
+                </div>
               </button>
               <button class="product-form__submit_builder button button--full-width button--secondary" type="button">
                 <span>Add to basket</span>
-                 <div class="loading-overlay__spinner hidden">
+                <div class="loading-overlay__spinner hidden">
                     <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                       <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      <circle class="path" style="stroke: #ffffff;" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                     </svg>
-                 </div>
+                </div>
               </button>
             </div>
           </div>
       </div>      
       <div class="drawer_inspiration common_status_manage">
         <div class="lined_images">
-          
-            <img src="https://treatsstudio.co.uk/cdn/shop/files/molly_web_2.png?v=1701706645" class="img_inspiration" dataindex="1" loading="lazy">
-          
-            <img src="https://treatsstudio.co.uk/cdn/shop/files/molly_web_1.png?v=1701706650" class="img_inspiration" dataindex="2" loading="lazy">
-          
-            <img src="https://treatsstudio.co.uk/cdn/shop/files/zoe.png?v=1701192233" class="img_inspiration" dataindex="3" loading="lazy">
-          
-            <img src="https://treatsstudio.co.uk/cdn/shop/files/Lucy.png?v=1701192233" class="img_inspiration" dataindex="4" loading="lazy">
-          
+          <img src="https://treatsstudio.co.uk/cdn/shop/files/molly_web_2.png?v=1701706645" class="img_inspiration" dataindex="1" loading="lazy">
+        
+          <img src="https://treatsstudio.co.uk/cdn/shop/files/molly_web_1.png?v=1701706650" class="img_inspiration" dataindex="2" loading="lazy">
+        
+          <img src="https://treatsstudio.co.uk/cdn/shop/files/zoe.png?v=1701192233" class="img_inspiration" dataindex="3" loading="lazy">
+        
+          <img src="https://treatsstudio.co.uk/cdn/shop/files/Lucy.png?v=1701192233" class="img_inspiration" dataindex="4" loading="lazy">
         </div>
       </div>
     </div>
     <div class="ele_cart-drawer-close-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 19 24" fill="none">
-          <path d="M18 6L6 18" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M6 6L18 18" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 19 24" fill="none">
+        <path d="M18 6L6 18" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M6 6L18 18" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
     </div>
-</div>
-
-
-<style>
-  .variant-wrapper_drawer {
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    padding-right: 10px;
-    margin-top: 30px;
-  }
-  div#ol.overlay_drawer {
-    display: block;
-  }
-  .overlay_drawer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999999;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.4);
-  }
-  .ele_cart-drawer {
-	background: #ffffff;
-  	height: 100vh;
-  	position: fixed;
-	text-align: center;
-	top: 0;
-	width: 400px;
-	padding: 10px;
-    z-index: 99999999;
-  }  
-  .ele_cart-drawer-right,
-  .ele_cart-drawer-right_packs { left: -400px; }
-  .ele_cart-drawer-right.ele_cart-drawer-open,
-  .ele_cart-drawer-right_packs.ele_cart-drawer-open{ left: 0; }
-  .ele_cart-drawer-pushtoleft { left: 400px; }
-  .ele_cart-drawer, .ele_cart-drawer-push {
-  	-webkit-transition: all 0.5s ease;
-  	-moz-transition: all 0.5s ease;
-  	transition: all 0.5s ease;
-  }  
-  .ele_cart-drawer-btn {
-  	cursor: pointer;
-  	display: inline-block;
-  	font-size: 30px;
-  }  
-  .ele_cart-drawer-close-btn {
-  	cursor: pointer;
-  	position: absolute;
-  	top: 18px;
-  	right: 18px;
-  }
-  .bottom_links_drawer button {
-    color: var(--copy-dark-grey-1, #1D1D1D);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    background: transparent;
-    border: none;
-    box-sizing: non;
-    outline: none;
-    padding: 0;
-    cursor: pointer;
-  }  
-  .bottom_links_drawer span {
-      padding: 0 6px;
-  }
-
-  @media only screen and (max-width: 767px) {  
-    .ele_cart-drawer {
-      width: 300px;
+  </div>
+  <style>
+    .variant-wrapper_drawer {
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      padding-right: 10px;
+      margin-top: 30px;
     }
-    .ele_cart-drawer-right_packs { left: -300px; }    
-    .ele_cart-drawer-pushtoleft { left: 300px; }
-  }
-</style>
+    div#ol.overlay_drawer {
+      display: block;
+    }
+    .overlay_drawer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999999;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.4);
+    }
+    .ele_cart-drawer {
+    background: #ffffff;
+      height: 100vh;
+      position: fixed;
+    text-align: center;
+    top: 0;
+    width: 400px;
+    padding: 10px;
+      z-index: 99999999;
+    }  
+    .ele_cart-drawer-right,
+    .ele_cart-drawer-right_packs { left: -400px; }
+    .ele_cart-drawer-right.ele_cart-drawer-open,
+    .ele_cart-drawer-right_packs.ele_cart-drawer-open{ left: 0; }
+    .ele_cart-drawer-pushtoleft { left: 400px; }
+    .ele_cart-drawer, .ele_cart-drawer-push {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }  
+    .ele_cart-drawer-btn {
+      cursor: pointer;
+      display: inline-block;
+      font-size: 30px;
+    }  
+    .ele_cart-drawer-close-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 18px;
+      right: 18px;
+    }
+    .bottom_links_drawer button {
+      color: var(--copy-dark-grey-1, #1D1D1D);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      background: transparent;
+      border: none;
+      box-sizing: non;
+      outline: none;
+      padding: 0;
+      cursor: pointer;
+    }  
+    .bottom_links_drawer span {
+        padding: 0 6px;
+    }
 
-
-
+    @media only screen and (max-width: 767px) {  
+      .ele_cart-drawer {
+        width: 300px;
+      }
+      .ele_cart-drawer-right_packs { left: -300px; }    
+      .ele_cart-drawer-pushtoleft { left: 300px; }
+    }
+  </style>
   <div class="bottom_links_drawer">
     <button class="drawer_open_builder" atr="description">Description</button>
     <span>|</span>
     <button class="drawer_open_builder" atr="delivery_returns">Delivery &amp; Returns</button>
     <span>|</span>
     <button class="drawer_open_builder" atr="inspiration">Inspiration</button>
-    
   </div>
 </section>
 <script src="{{ 'jquery-3.6.4.min.js' | asset_url }}" defer="defer"></script>
