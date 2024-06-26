@@ -758,6 +758,7 @@ $(".product-form__submit_builder").click(function (e) {
                         targetElement.replaceWith(sourceElement);
                     }
                 }
+                $('#CartDrawer-Checkout').removeAttr('disabled');
             })
             .catch((e) => {
                 console.error(e);
